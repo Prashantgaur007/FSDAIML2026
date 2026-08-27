@@ -1,0 +1,11 @@
+// console.log("Hello World");
+const container = document.getElementById("container");
+const root = ReactDOM.createRoot(container);
+const h1 = React.createElement("h1", { style: { color: "blue" } }, "Welcome to React");
+const h2 = React.createElement("h2", { style: { color: "red" } }, "ABES Engineering College");
+const img = React.createElement("img", { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSt7YW7ReSPYUPWaGoJDtALJS-CGthC2_jUycmgfPUuQ&s=10", style: { width: "600px", height: "auto" }});
+const name = React.createElement("h3", { style: { color: "black" } }, "Prashant Gaur");
+const roll = React.createElement("h3", { style: { color: "black" } }, "Roll No: 147");
+const branch = React.createElement("h3", { style: { color: "black" } }, "Branch: CSE-AIML");
+const div = React.createElement("div", {style: { border: "7px solid black", width: "600px" }},img, h1, h2, name, roll, branch);
+root.render(div);
