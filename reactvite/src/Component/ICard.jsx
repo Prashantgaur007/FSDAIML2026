@@ -1,57 +1,18 @@
-import React from 'react';
-import img from './Images/prashant.jpg';
+import React from 'react'
+import pic from '../images/Prashant.png'
+function ICard(props) {
 
-function ICard() {
-    return (
-        <div
-            style={{
-                border: '10px solid red',
-                height: '350px',
-                width: '250px',
-                padding: '20px',
-                backgroundColor: 'lightblue',
-                marginLeft: '200px'
-            }}
-        >
-            <img
-                src={img}
-                alt="Prashant Gaur"
-                style={{ width: '100%', height: 'auto' }}
-            />
+  return (
+    <div  style={{ border: '5px solid red',height:'auto',width:'320px',margin:'auto' }}>
+    <h2 style={{backgroundColor:'aqua',color:'black'}}>ABES Enginnering College</h2>
+    <h3 style={{ color: 'red',backgroundColor:'aqua' }}>Name : {props.name}</h3>
+    <h3 style={{ color: 'red',backgroundColor:'aqua' }}>Roll : {props.roll}</h3>
+    <h3 style={{ color: 'red',backgroundColor:'aqua' }}>Branch : {props.branch}</h3>
+    <h3 style={{ color: 'red',backgroundColor:'aqua' }}>Section : {props.section} </h3>
 
-            <h2 style={{ backgroundColor: 'white', color: 'black' }}>
-                ABES Engineering College
-            </h2>
-
-            <h2 style={{ backgroundColor: 'white', color: 'black' }}>
-                Welcome to Vite
-            </h2>
-
-            <h2 style={{ backgroundColor: 'white', color: 'black' }}>
-                NAME = Prashant Gaur
-            </h2>
-
-            <h2 style={{ backgroundColor: 'white', color: 'black' }}>
-                ROLL NO = 147
-            </h2>
-
-            <h2 style={{ backgroundColor: 'white', color: 'black' }}>
-                BRANCH = AIML
-            </h2>
-
-            <h2 style={{ backgroundColor: 'white', color: 'black' }}>
-                YEAR = 2024-28
-            </h2>
-
-            <div>
-                <img
-                    src={img}
-                    alt="Prashant Gaur"
-                    style={{ width: '100%', height: 'auto' }}
-                />
-            </div>
-        </div>
-    );
+    <div ><img src={props.image} height={'300px'} width={'300px'} style={{borderRadius:'50%'}}></img></div>
+    
+    </div>
+  )
 }
-
 export default ICard;
