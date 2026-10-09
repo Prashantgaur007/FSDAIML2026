@@ -1,5 +1,5 @@
 import react from 'react'
-import ICard from './ICard'
+import ICard from './Icard'
 import pic from '../images/Prashant.png'
 
 function ICardGallery() {
